@@ -1,10 +1,10 @@
 let config =  {
   secretkey:'shuikejingkey',
-  listenport:3100,
-  rooturl:'shuizhihe.com28.cn:3100',
+  listenport:process.env.port || 3100,
+  rooturl:process.env.rooturl || 'shuizhihe.com28.cn:3100',
   publishdirtest:'../../dist/test',
-  publishdirapp:'../../dist/skj/app',
-  publishdiradmin:'../../dist/skj/admin',
+  publishdirapp:'../../dist/app',
+  publishdiradmin:'../../dist/admin',
   publishlog:'../../log',
   uploaddir:'../uploader',
   uploadurl:'/uploader',
@@ -13,7 +13,7 @@ let config =  {
   maxDistance:3,
   authexptime:120,//验证码有效期，2分钟
   loginuserexptime:60*60*24*30,//用户登录有效期,30天
-  mongodburl:'mongodb://localhost/skj',
+  mongodburl:process.env.dburl || 'mongodb://localhost/skj',
 
   tcpport:52341,
   deviceconfig:{
