@@ -8,6 +8,10 @@ let mongoose     = require('mongoose');
 mongoose.Promise = global.Promise;
 
 console.log(`mongodburl==>${config.mongodburl}`);
+console.log(`listenport==>${config.listenport}`);
+console.log(`tcpport==>${config.tcpport}`);
+
+
 mongoose.connect(config.mongodburl,{
     socketOptions: {
       // This option is on by default, but why not set it explicitly
@@ -22,6 +26,8 @@ mongoose.connect(config.mongodburl,{
 
 srvsystem.job();
 srvwebsocket.startsrv(srvhttp.startsrv());
+
+
 tcpSrv.starttcpsrv({listenport:config.tcpport});
 process.on('uncaughtException', (err)=> {
     console.log(err);

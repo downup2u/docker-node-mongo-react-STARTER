@@ -1,6 +1,6 @@
 let config =  {
   secretkey:'shuikejingkey',
-  listenport:process.env.port || 3100,
+  listenport:process.env.listenport || 3100,
   rooturl:process.env.rooturl || 'shuizhihe.com28.cn:3100',
   publishdirtest:'../../dist/test',
   publishdirapp:'../../dist/app',
@@ -15,7 +15,7 @@ let config =  {
   loginuserexptime:60*60*24*30,//用户登录有效期,30天
   mongodburl:process.env.MONGO_URL || 'mongodb://192.168.0.1/skj',
 
-  tcpport:52341,
+  tcpport:process.env.tcpport ||52341,
   deviceconfig:{
     //  gradetotal:{
     //    '优':100,
