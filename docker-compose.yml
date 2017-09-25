@@ -12,6 +12,8 @@ server:
     - mongodb
 
 mongodb:
-  image: mongo
+  image:  mongo:3.4
+   volumes:
+     - "/db/dbdata:/data/db -d"
   ports:
       - "27017:27017"
