@@ -1,0 +1,229 @@
+.myProfilePage{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #F5F5F5;
+}
+.myProfilePage .headCont{
+    
+    background-image: linear-gradient(0deg, #00cac8, #0090d8);
+
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+    position: relative;
+    flex-shrink: 0;
+    margin-top: -1px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+.myProfilePage .headCont .signDom{
+    position: absolute;
+    top: 90px;
+    right: 15px;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    z-index: 5
+}
+.myProfilePage .headCont .signDom span.lnk{
+    background: #FFF;
+    height: 36px;
+    width: 36px;
+    color: #108ee9;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 36px;
+    margin-right: 5px;
+    display: block;
+}
+.myProfilePage .userInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2
+}
+.myProfilePage .userInfo img.avatar{
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    border:3px solid #FFF;
+    margin-bottom: 5px; 
+}
+.myProfilePage .userInfo .username{
+    color: #FFF;
+    font-size: 20px;
+    display: block;
+}
+.myProfilePage .userInfo .usertype {
+    color: #FFF;
+}
+.myProfilePage .userCode{
+    position: absolute;
+    top: 162px;
+    left: 0px;
+    color: #FFF;
+    background: #FFF;
+    color: #0bdbd9;
+    line-height: 34px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 0 40px 40px 0;
+    font-size: 14px;
+    z-index: 3
+}
+.myProfilePage .userMessageLnk{
+    position: absolute;
+    right: 10px;
+    top: 30px;
+}
+.myProfilePage .userMessageLnk img{
+    width: 26px;
+}
+.myProfilePage .userMessageLnk span {
+    position: absolute;
+    top:0;
+    right: -5px;
+    background: #C00;
+    border-radius: 10px;
+    color: #FFF;
+    padding: 0 3px;
+    min-width: 18px;
+    text-align: center;
+}
+.myProfileBannerCont{
+    flex-grow: 1;
+    overflow: scroll
+}
+.myProfileBannerCont .l1con{
+    background: #FFF;
+}
+.myProfileBannerCont .l1{
+    border-bottom: 1px solid #EEE;
+    display: flex;
+    padding: 10px 15px;
+    justify-content: space-between;
+    padding-right: 30px;
+    background: url("/img/myprofile/15.png") no-repeat right center;
+    background-size: 40px 40px;
+}
+.myProfileBannerCont .l1 span{
+    font-size: 16px;
+    display: block;
+}
+.myProfileBannerCont .l1 span:last-child{
+    font-size:14px;
+    color: #999;
+}
+
+.myorderstitle{
+    display: flex;
+    padding: 10px 15px;
+    justify-content: space-between;
+    padding-right: 30px;
+    position: relative;
+    padding-top: 100px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left:0;
+    background: url("/img/shuikj_35.png") no-repeat center bottom;
+    background-size: 100% auto;
+    z-index: 1;
+}
+.myorderstitle:after{
+    content: " ";
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    border-width: 2px 2px 0 0;
+    border-color: #FFF;
+    border-style: solid;
+    -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    position: relative;    
+    position: absolute;
+    bottom: 27px;
+    right: 20px;
+}
+.myorderstitle span{
+    font-size: 18px;
+    display: block;
+    color: #FFF;
+    line-height: 46px;
+}
+.myorderstitle span:last-child{
+    font-size: 14px;
+}
+
+
+.myProfileBannerCont .l2 {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #EEE;
+    margin-bottom: 20px;
+}
+.myProfileBannerCont .l2 > div img{
+    width: 36px;
+    margin: 5px;
+}
+.myProfileBannerCont .l2 > div span{
+    display: block;
+}
+.myProfileBannerCont .l2 > div{
+    padding:5px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    position: relative;
+}
+
+.myProfileBannerCont .l2 > div > i{
+    font-style: normal;
+    color: #FFF;
+    background: #C00;
+    height: 16px;
+    width: 16px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    margin-left: 50%;
+    left: 6px;
+}
+
+
+.myProfileBannerCont .ll{
+    margin-bottom: 15px;
+    background: #FFF;
+}
+.myProfileBannerCont .llcont{
+    border-top: 1px solid #EEE;
+}
+
+.myProfileBannerCont .ll div{
+    border-bottom: 1px solid #EEE;
+    padding: 8px 15px;
+    display: flex;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-align-items: center;
+    background: url("/img/myprofile/15.png") no-repeat right center;
+    background-size: 40px 40px;
+}
+.myProfileBannerCont .ll div img{
+    width: 30px;
+    margin-right: 10px;
+}
+.myProfileBannerCont .ll div span{
+    font-size: 16px;
+    display: block;
+}

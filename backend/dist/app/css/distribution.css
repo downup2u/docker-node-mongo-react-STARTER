@@ -1,0 +1,260 @@
+.distributionPage {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    background: #F5F5F5;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.distributionPage .headCont {
+    background: linear-gradient(180deg, #5596d6, #337dc4);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+    position: relative;
+    flex-shrink: 0;
+    justify-content: center;
+    align-content: center;
+}
+
+.distributionPage .userInfo {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.distributionPage .userInfo img.avatar {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border: 3px solid #FFF;
+    margin-bottom: 5px;
+}
+
+.distributionPage .userInfo .username {
+    color: #FFF;
+    font-size: 14px;
+}
+
+.distributionPage .userInfo .usertype {
+    color: #FFF;
+}
+
+.distributionPage .ui.secondary.pointing.menu {
+    margin: 0;
+    border-bottom: 1px solid #EEE
+}
+
+.distributionPage .ui.secondary.pointing.menu .item{
+    border: none;
+}
+
+.distributionPage .ui.secondary.pointing.menu .item {
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin: 0;
+    font-weight: 100;
+    height: 40px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.distributionPage .ui.secondary.pointing.menu .item.active {
+    border: none;
+    color: #5694dd;
+    margin: 0;
+    font-weight: 100;
+}
+
+.distributionPage .cont {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    background: #FFF;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    overflow: scroll;
+}
+
+.distributionPage .cont .li {
+    margin: 5px 15px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background: #eff4fa;
+    border: 1px solid #EEE;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.distributionPage .cont .li img {
+    width: 46px;
+    border-radius: 46px;
+    height: 46px;
+    margin-right: 10px;
+}
+
+.distributionPage .cont .li span.num {
+    font-size: 16px;
+    margin-right: 15px;
+    color: #5096d1;
+}
+
+.distributionPage .cont .li div {
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.distributionPage .cont .li i {
+    font-style: normal;
+    color: #F00;
+}
+
+.bottomBttn {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    border-top: 1px solid #EEE;
+    background: #EEE;
+    padding: 5px 20%;
+    
+    -moz-flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+}
+
+.bottomBttn span{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    border-radius: 5px;
+    background: #F00;
+    color: #FFF;
+    font-size: 14px;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    height: 40px;
+}
+.distributionInfoPage{
+    background: #EEE;
+}
+
+.distributionInfoPage .proinfo .li >div{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: stretch;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    justify-content: space-between;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    padding: 15px;
+    font-size:14px;
+    background: #FFF;
+    border-bottom: 1px solid #EEE;
+}
+.distributionInfoPage .proinfo .li >div>div{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.distributionInfoPage .proinfo .li >div .price {
+    display: flex;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    font-size: 18px;
+    color: #F00;
+}
+.distributionInfoPage .proinfo .li >div .time{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.distributionInfoPage .proinfo .li >div .time span{
+    margin-right: 10px;
+}
+.distributionInfoPage .proinfo .li >div .time span:first-child{
+    font-weight: bold;
+    color: #111;
+}
+.distributionInfoPage .list{
+    //border-top: 1px solid #EEE;
+    margin-bottom: 10px;
+}
+.distributionInfoPage .list .li{
+    background: #FFF;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    border-bottom: 1px solid #EEE;
+    padding: 2px 15px;
+    line-height: 40px;
+}
+.distributionInfoPage .list .li span{
+    font-size: 16px;
+}
+.distributionInfoPage .list .li span.price {
+    color: #F00;
+}
+
+

@@ -1,0 +1,80 @@
+.mycodePage{
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+}
+.mycodePage .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-bottom: 40px;
+}
+.mycodePage .content img{
+    width: 50%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.mycodePage .content span{
+    font-size: 16px;
+}
+
+.mycodePage .PageHead {
+    background: #5596d6;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    padding-top: 20px;
+}
+.mycodePage .content .tt{
+    font-size: 16px;
+    margin-top: 30px;
+}
+.mycodePage .content .code{
+    font-size: 3rem;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.mycodePage .zhu{
+    padding: 15px;
+    font-size: 16px;
+    background: rgba(255,242,104,.2);
+    margin: 20px;
+}
+
+.mycodePage .PageHead .title {
+    flex-grow: 1;
+    text-align: center;
+    line-height: 48px;
+    color: #FFF;
+    font-size: 16px;
+}
+
+.mycodePage .PageHead .imgcont {
+    display: flex;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mycodePage .PageHead .imgcont img {
+    width: 30px;
+}
+
+.mycodePage .PageHead i.icon {
+    font-size: 30px;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}

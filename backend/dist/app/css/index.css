@@ -1,0 +1,125 @@
+*{
+    overflow-scrolling:touch;
+    -webkit-overflow-scrolling:touch;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    font-weight: 300;
+}
+input, textarea{
+    -webkit-user-select:text;
+    -moz-user-select:text;
+    -ms-user-select:text;
+    user-select:text;
+}
+
+.ui.basic.red.label{
+    pointer-events: none;
+}
+
+.pageStyle{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    flex-shrink: 1;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+
+.pageStyle >div, .pageWamp > div{
+    opacity: 1;
+    animation:pageshow .5s;
+    -webkit-animation:pageshow .5s;
+}
+@keyframes pageshow{
+    from {opacity : .2;}
+    to {opacity : 1;}
+}
+
+
+
+.pageWamp >div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background: #FFF;
+    align-self: stretch;
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+
+.homeBottom{
+    display : flex;
+    justify-content: space-between;
+    bottom: 0;
+    width: 100%;
+    background: #EEE;
+    border-top: 1px solid #CCC;
+    flex-shrink: 0;
+    z-index: 999
+}
+.homeBottom .ui.button{
+    width: 25%;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    margin:0;
+    font-weight: 100;
+    padding: 5px 0;
+
+}
+.homeBottom .ui.button.active{
+    background: #EEE;
+}
+.homeBottom .ui.button img{
+    width: 30px;
+    margin-bottom: 3px;
+}
+.homeBottom .ui.button.action span{
+    color: #3ab4c3;
+}
+.homeBottom .ui.button span{
+    display: block;
+    font-size: 12px;
+}
+.logisticsinfoPage{
+    justify-content: flex-start;
+}
+.ui.feed>.event>.content .meta .like:hover .icon{
+    color: rgba(0,0,0,.5)
+}
+.feedBottomReplyForm #newNavHeadContent.newNavHeadContent{
+    width: 100%;
+    top: 0;
+    position: absolute;
+    z-index: 10001
+}
+.feedBottomReplyForm i.back{
+    position: absolute;
+    left: 0;
+    top: 20px;
+    z-index: 10002;
+    color: #FFF;
+    font-size: 20px;
+    font-size: 30px;
+    color: #FFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 15px;
+    height: 48px;
+    width: 50px;
+}
+
+

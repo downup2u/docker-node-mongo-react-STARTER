@@ -1,0 +1,619 @@
+.addAddressPage{
+    flex-grow: 1;
+    overflow: hidden;
+}
+.AddressAddPage{
+    background: #EEE;
+}
+.AddressAddPage .setForm {
+    display: flex;
+    background: #FFF;
+}
+.AddressAddPage .setForm > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    height: 40px;
+    flex-grow: 1;
+    margin: 5px 15px;
+}
+.AddressListPage .listcont{
+
+}
+
+.AddressListPage .listcont .addressItem{
+    border-bottom: 1px solid #EEE;
+}
+.AddressListPage .listcont .addressItem .rc-swipeout{
+    padding: 15px;
+}
+.ui.list.addAddress {
+    border: none;
+    background: #FFF
+}
+.AddressListPage .addressItem .tit{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #999;
+}
+.AddressListPage .addressItem .address{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.addAddress.ui.selection.list .list > .item, .addAddress.ui.selection.list > .item {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    border-bottom: 1px solid #EEE;
+    border-radius: 0;
+    min-height: 50px;
+    align-items: stretch;
+}
+
+.AddressListPage .ui.checkbox .box:before,
+.AddressListPage .ui.checkbox label:before{
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+}
+.AddressListPage .ui.checkbox .box:after,
+.AddressListPage .ui.checkbox label:after{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    background: #5596d6;
+    border-radius: 40px;
+    color: #FFF;
+    font-weight: 100;
+}
+.AddressListPage .ui.checkbox input:checked~.box:after,
+.AddressListPage .ui.checkbox input:checked~label:after{
+    color: #FFF;
+}
+.AddressListPage .ui.checkbox input.hidden+label{
+    height: 20px;
+    line-height: 20px;
+}
+
+.addAddress.ui.selection.list .list > .item, .addAddress.ui.selection.list > .item .tit {
+    width: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.addAddress.ui.selection.list .list > .item, .addAddress.ui.selection.list > .item .content {
+    flex-grow: 1;
+    display: flex;
+    font-size: 16px;
+}
+
+.addAddress.ui.selection.list .list > .item, .addAddress.ui.selection.list > .item input {
+    border: none;
+    border-radius: 0;
+}
+
+.addAddress.ui.selection.list .list > .item, .addAddress.ui.selection.list > .item .content .input {
+    display: flex;
+    flex-grow: 1;
+    border: none;
+    border-radius: 0;
+}
+
+.addAddress.ui.selection.list .list > .item, .addAddress.ui.selection.list > .item .content select {
+    border: none;
+    border-radius: 0;
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+.AddressListPage .addNew {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 50px;
+}
+
+.AddressListPage .addNew button.button {
+    flex-grow: 1;
+    border-radius: 0;
+    margin: 0;
+}
+
+.AddressListPage .ui.list {
+    border: none;
+}
+
+.AddressListPage .ui.selection.list > .item {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background: #FFF;
+    border-radius: 0;
+    border-bottom: 1px solid #EEE;
+}
+
+.AddressListPage .ui.selection.list > .item .tit {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.AddressListPage .ui.selection.list > .item .address span {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.AddressListPage .ui.selection.list > .item .address {
+    margin-bottom: 10px;
+}
+
+.AddressListPage .listControl {
+    display: flex;
+    justify-content: space-between;
+}
+
+.AddressListPage .listControl .lnk {
+    display: flex;
+}
+
+.AddressListPage .listControl .lnk > div {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.UserInfoPage .ui.list {
+    border: none;
+}
+.UserInfoPage .ui.list .item:first-child{
+    position: relative;
+}
+.UserInfoPage .ui.selection.list > .item:after {
+    content: none;
+}
+
+.UserInfoPage .ui.selection.list > .item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: #FFF;
+    border-radius: 0;
+    border-bottom: 1px solid #EEE;
+    align-items: center;
+    font-size: 16px;
+}
+
+.UserInfoPage .escLogin {
+    display: flex;
+    justify-content: center;
+}
+
+.UserInfoPage .escLogin .ui.basic.button {
+    width: 60%;
+    border-radius: 50px;
+    background: #FFF;
+    display: block;
+}
+
+.UserLoginPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+}
+.UserLoginPage .weui-agree{
+    padding-right: 0;
+}
+.pageWamp >div.UserLoginPage{
+    overflow: scroll;
+    /*flex-shrink: 0;*/
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.pageWamp >div.UserLoginPage > div{
+    display: block;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-self:  stretch;
+    overflow:  scroll;
+}
+.pageWamp #UserLoginPageForm{
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 482px;
+    flex-grow: 1;
+}
+.UserLoginPage .loginhead {
+    width: 100%;
+}
+
+.UserLoginPage .loginform {
+    padding-top: 20px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.UserLoginPage .loginform .logininput {
+    position: relative;
+
+}
+
+.UserLoginPage .loginform .yanzhenBtn {
+    position: absolute;
+    width: 100px;
+    height: 44px;
+    right: 10%;
+    z-index: 1000;
+    border-radius: 0;
+    top: 0;
+    margin: 0;
+    background: #2185d0;
+    color: #FFF;
+    line-height: 44px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.UserLoginPage .logininput .input, .UserLoginPage .loginform .remember {
+    width: 100%;
+    border-radius: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: block;
+}
+
+.UserLoginPage .logininput .lefticon {
+    position: absolute;
+    left: 11%;
+    top: 7px;
+    font-size: 22px;
+    color: #666;
+    width: 30px;
+}
+
+.UserLoginPage .logininput .mobile {
+    font-size: 26px;
+    top: 5px
+}
+
+.UserLoginPage .logininput .eye, .UserLoginPage .logininput .yanzhen {
+    position: absolute;
+    right: 10%;
+    top: 0px;
+    color: #CCC;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    margin: 0;
+}
+
+.UserLoginPage .logininput .yanzhen {
+    width: auto;
+    padding: 0 10px;
+    border-left: 1px solid #CCC;
+}
+
+.UserLoginPage .logininput .eye.sel {
+    color: #111;
+}
+
+.UserLoginPage .logininput .input input {
+    border-radius: 0;
+    background: #EEE;
+    margin-bottom: 18px;
+    text-indent: 25px;
+    height: 44px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.loginBotton {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 14% 10px 14%;
+}
+
+.loginBotton .ui.button {
+    border-radius: 100px;
+    margin-bottom: 10px;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    display: block;
+}
+
+
+.AddressAddPageBottom{
+    margin-top: 20px;
+}
+
+.UserLoginPage .forgetpwdcon {
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.UserLoginPage .forgetpwdcon >div,
+.UserLoginPage .forgetpwd {
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -webkit-justify-content:flex-end; 
+    justify-content: flex-end;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+.UserLoginPage .loginPageTop {
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    position: relative;
+}
+
+.UserLoginPage .loginPageTop .loginHead {
+    position: relative;
+}
+
+.UserLoginPage .loginPageTop .loginHead i {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    color: #FFF;
+    font-size: 30px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    -moz-justify-content: center;
+    -webkit-justify-content:center; 
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.UserLoginPage .loginPageBottom {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.UserLoginPage .loginPageBottom .tit {
+    position: relative;
+    line-height: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -moz-justify-content: center;
+    -webkit-justify-content:center; 
+    justify-content: center;
+    margin: 0 10%;
+    margin-bottom: 10px;
+}
+
+.UserLoginPage .loginPageBottom .tit span {
+    background: #FFF;
+    z-index: 2;
+    position: relative;
+    padding: 0 10px;
+}
+
+.UserLoginPage .loginPageBottom .tit:after {
+    content: ' ';
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 100%;
+    height: 1px;
+    background: #EEE;
+}
+
+.UserLoginPage .loginPageBottom .lnk {
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    -moz-justify-content: center;
+    -webkit-justify-content:center; 
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.UserLoginPage .loginPageBottom .lnk > div {
+    padding: 10px;
+    background: #36a9eb;
+    border-radius: 100px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    color: #FFF;
+}
+
+.UserLoginPage .loginPageBottom .lnk > div i.icon {
+    margin: 0;
+    font-size: 22px;
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.UserLoginPage .loginPageBottom .lnk > div:last-child {
+    margin-left: 15px;
+    background: #00c40c;
+}
+
+.ChangeUsernamePage .inputContent{
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    align-items: stretch;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    padding: 15px;
+    position: relative;
+}
+.ChangeUsernamePage .inputContent .inputTitle{
+
+}
+.ChangeUsernamePage .inputContent > .ui.input{
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+}
+.ChangeUsernamePage .inputContent > .ui.input input{
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.ChangeUsernamePage .btnSub{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+}
+.ChangeUsernamePage .btnSub button.ui.primary.button{
+    flex-grow: 1;
+    margin: 0;
+    height: 46px;
+    border-radius: 0;
+}
+
+
+.UserLoginPage .loginform .logininput {
+    position: relative;
+}
+.UserLoginPage .loginform .logininput .ui.red.pointing.basic.label{
+    border-radius: 0;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    z-index: 1000;
+    margin: 0;
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+.UserLoginPage .loginform .logininput.password .ui.red.pointing.basic.label{
+    right: 60px;
+}
+.UserLoginPage .loginform .logininput.yanzhenyinput .ui.red.pointing.basic.label{
+    right: 167px;
+}
+.addAddressPage .addAddress .item .content{
+    position: relative;
+}
+.addAddressPage .addAddress .item .content .ui.red.pointing.basic.label{
+    border-radius: 0;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    z-index: 1000;
+    margin: 0;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.UserLoginPage .loginform .logininput .ui.red.pointing.basic.label:before,
+.addAddressPage .addAddress .item .content .ui.red.pointing.basic.label:before{
+    content: none;
+}
+.UserLoginPage .loginform .logininput  .ui.basic.red.label,
+.UserLoginPage .loginform .logininput  .ui.red.label,
+.UserLoginPage .loginform .logininput  .ui.red.labels .label{
+
+    background-image: none;
+    background: none;
+    background-color: rgba(0,0,0,0)!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
