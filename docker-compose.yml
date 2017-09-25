@@ -8,6 +8,8 @@ server:
     - MONGO_URL=mongodb://192.168.0.1:27017/skj
   links:
     - mongodb
+  ports:
+     - "3100:3100"
   expose:
      - "3100"
 
