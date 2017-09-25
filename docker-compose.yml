@@ -5,7 +5,7 @@ server:
   volumes:
     - ./backend:/app
   environment:
-    - dburl:"mongodb://192.168.0.1:27017"
+    - dburl:"mongodb://192.168.0.1:27017/skj"
   ports:
     - "3000:3000"
   links:
