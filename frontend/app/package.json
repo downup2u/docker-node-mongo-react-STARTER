@@ -41,7 +41,7 @@
     "rmc-list-view": "^0.8.3",
     "semantic-ui-react": "^0.67.2",
     "socket.io-client": "^1.7.4",
-    "weui": "^1.1.2"
+    "weui": "1.1.2"
   },
   "scripts": {
     "buildcp": "react-scripts build && cp -r build/. ../../backend/dist/app && rm -R build",
