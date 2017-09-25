@@ -2,7 +2,7 @@ var net = require('net');
 var winston  = require('./log/log.js');
 // var GlobalEmitter = require('./eventemitter');
 let mongoose = require('mongoose');
-
+const util = require('./util/util.js');
 const GetData = require('./devicetcp/devicedata.js');
 const SaveData = require('./devicetcp/devicedatadb.js');
 const Protocol = require('./devicetcp/protocol.js');
@@ -12,20 +12,50 @@ const lengthoffset = macoffset + maclen;
 const cmdoffset = lengthoffset + 2;
 const data_headlen = 1+maclen+2+1;
 
-var tcpsocksmap = new Map();
+const tcpsocksmap = new Map();
 
 let getsocketfrommac = (mac)=>{
-  return tcpsocksmap.get(mac);
+  let obj = tcpsocksmap.get(mac);
+  if(!!obj){
+    return obj.socket;
+  }
+  return null;
 }
 
+const pureIp = (ip) => {
+    return ip.indexOf('::ffff:') == 0 ? ip.substring(ip.indexOf('::ffff:') + 7) : ip;
+};
 //订阅设备id,接收到消息时触发
 //插入设备数据库,定时更新（历史数据）,publish给最新的用户
 starttcpsrv = (settings)=> {
   net.createServer((socket)=> {
       let curid = undefined;
-
-      let fromsock = socket.remoteAddress + ':' + socket.remotePort;
+      const remoteip = pureIp(socket.remoteAddress);
+      let fromsock = remoteip + ':' + socket.remotePort;
       winston.getlog().info("["+fromsock+"]接受一个socket");
+      // util.getIpInfo('114.228.37.134',(err,result)=>{
+      //   if(!err && !!result){
+      //       // {
+      //       //   "code": 0,
+      //       //   "data": {
+      //       //       "country": "中国",
+      //       //       "country_id": "CN",
+      //       //       "area": "华东",
+      //       //       "area_id": "300000",
+      //       //       "region": "江苏省",
+      //       //       "region_id": "320000",
+      //       //       "city": "常州市",
+      //       //       "city_id": "320400",
+      //       //       "county": "",
+      //       //       "county_id": "-1",
+      //       //       "isp": "电信",
+      //       //       "isp_id": "100017",
+      //       //       "ip": "114.228.37.134"
+      //       //   }
+      //       // }
+      //     console.log(`result===>${JSON.stringify(result)}`);
+      //   }
+      // });
 
       let recvbuf = new Buffer('','binary');
 
@@ -71,7 +101,16 @@ starttcpsrv = (settings)=> {
                  mac = mac.toUpperCase();
                  if(!curid){
                    curid = mac;
-                   tcpsocksmap.set(mac,socket);
+                   tcpsocksmap.set(mac,{
+                     socket,
+                     remoteip
+                    }
+                   );
+                   util.getIpInfo(remoteip,(err,result)=>{
+                     if(!err && !!result){
+                       console.log(`result===>${JSON.stringify(result)}`);
+                     }
+                   });
                  }
                  let cmd = recvbuf[cmdoffset];
                  console.log(`获取到mac地址:${mac},命令号:${cmd},长度:${datalen}`);

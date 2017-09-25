@@ -13,7 +13,7 @@ let config =  {
   maxDistance:3,
   authexptime:120,//验证码有效期，2分钟
   loginuserexptime:60*60*24*30,//用户登录有效期,30天
-  mongodburl:process.env.MONGO_URL || 'mongodb://192.168.0.1/skj',
+  mongodburl:process.env.MONGO_URL || 'mongodb://127.0.0.1/skj',
 
   tcpport:process.env.tcpport ||52341,
   deviceconfig:{
