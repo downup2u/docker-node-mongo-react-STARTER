@@ -1,0 +1,134 @@
+.myMessage{
+    background: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex-grow: 1;
+    height: 1;
+}
+.messageList{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: visible;
+    align-items: stretch;
+    flex-shrink: 1;
+    position: relative;
+    overflow: hidden;
+}
+.messageList .items{
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #DDD;
+    background: #FFF;
+}
+.messageList .items .tt{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.messageList .items .cont{
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #EEE;
+}
+.messageList .items .lnk {
+    display: flex;
+    justify-content: space-between;
+    color: #999;
+}
+
+#wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #CCC;
+}
+
+#scroller {
+  position: absolute;
+  z-index: 1;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  width: 100%;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -o-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+#scroller ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: left;
+}
+
+#scroller ul li {
+  padding: 0 10px;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #fff;
+  background-color: #fafafa;
+  font-size: 14px;
+
+}
+
+.messageDetail {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.messageDetail .list{
+  overflow: scroll;
+  flex-grow: 1;
+  padding: 0 20px;
+}
+.messageDetail .list .time{
+  text-align: center;
+}
+
+.messageDetail .tt{
+    font-size: 16px;
+    margin-bottom: 3px;
+    margin-top: 20px;
+    text-align: center;
+}
+.messageDetail .time{
+    font-size: 12px;
+    color: #999;
+}
+.messageDetail .cont{
+    padding: 15px;
+    margin-top: 15px;
+    border-top:1px solid #EEE;
+    font-size: 16px;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+.addcommunityHotlnk{
+    position: fixed;
+    bottom: 70px;
+    right: 15px;
+    z-index: 1000;
+}
+i.addcommunityHotlnk.huge.icon{
+    opacity: .8;
+}

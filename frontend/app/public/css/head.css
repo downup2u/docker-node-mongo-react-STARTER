@@ -1,0 +1,70 @@
+*{
+    outline: none;
+}
+.ui.segment.headContent{
+    background-image: linear-gradient(0deg, #00cac8, #0090d8);
+    border-radius: 0;
+    border: 0;
+    display: flex;
+    justify-content : space-between;
+    align-items: stretch;
+    margin-bottom: 0;
+    padding: 0;
+    height:68px;
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+    flex-shrink: 0;
+    padding-top: 20px;
+}
+.ui.segment.headContent .leftlnk{
+    width: 25%;
+    display: flex;
+}
+.ui.segment.headContent .rightlnk {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+}
+.ui.segment.headContent .leftlnk button, .ui.segment.headContent .rightlnk button{
+    background: none;
+    color: #FFF;
+    padding: 0;
+    margin: 0;
+    padding-left: 15px;
+    font-size: 16px;
+    font-weight: 100;
+}
+.ui.segment.headContent .rightlnk button{
+    padding:0;
+    padding-right: 15px;
+}
+.ui.segment.headContent .title {
+    width: 50%;
+    font-size: 18px;
+    color: #FFF;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ui.segment.headContent .ui.grid{
+    margin: 0;
+}
+.ui.segment.headContent .ui.grid>.row>[class*="right aligned"].column.column i.large.icon{
+    color: #FFF;
+}
+.ui.bottom.right.popup{
+    padding: 0;
+}
+.communityMoreLnk > div{
+    display: flex;
+    padding: 0 10px;
+    line-height: 30px;
+}
+.communityMoreLnk > div:first-child{
+    border-bottom: 1px solid #EEE;
+}
+.ui.segment.headContent .leftlnk button i.icon.angle.left:before{
+    font-size: 30px;
+}

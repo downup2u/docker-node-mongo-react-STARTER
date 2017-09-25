@@ -1,0 +1,26 @@
+.aboutusPage{
+    background: #FFF;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.aboutusPage .content{
+    flex-grow: 1;
+    font-size: 14px;
+    overflow: scroll;
+}
+.aboutusPage .content div{
+    padding: 15px;
+}
+.aboutusPage .content img{
+    max-width: 80%;
+    margin: auto;
+}
